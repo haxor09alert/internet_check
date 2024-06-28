@@ -30,7 +30,7 @@ class ConnectivityStatusNotifier extends StateNotifier<ConnectivityStatus> {
         state = newState;
         lastResult = newState;
       }
-    } as void Function(List<ConnectivityResult> event)?);
+    });
   }
 }
 
