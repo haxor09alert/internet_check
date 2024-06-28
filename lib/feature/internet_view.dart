@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-class InternetChecker extends ConsumerWidget {
-  const InternetChecker({Key? key}) : super(key: key);
+class InternetView extends ConsumerWidget {
+  const InternetView({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -25,12 +25,4 @@ class InternetChecker extends ConsumerWidget {
 // Example of a Riverpod provider to simulate internet connection state
 final internetConnectionProvider = StateProvider<bool>((ref) => true);
 
-void main() {
-  runApp(
-    ProviderScope(
-      child: MaterialApp(
-        home: InternetChecker(),
-      ),
-    ),
-  );
-}
+
